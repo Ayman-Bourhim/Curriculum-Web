@@ -1,21 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Currículum</title>
+    <title>Mi CV Libreta</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <style>
-        body { background-image: url('resource/img/background_img.webp'); background-size: cover;} 
+        body {
+            font-family: 'Indie Flower', cursive;
+            /* estilo manuscrito */
+        }
     </style>
 </head>
-<body class="bg-gray-100">
-    <h1 class="text-3xl font-bold text-center mt-10">Ayman</h1>
-    <p class="text-center text-gray-600">Desarrollador Web</p>
-    <section class="max-w-2xl mx-auto mt-10 bg-white p-6 rounded shadow">
-    <h2 class="text-xl font-semibold mb-3">Sobre mí</h2>
-    <p>Soy una persona apasionada aplicada, proactiva y resolutiva. Un gran apasionado de la tecnología y el desarrollo web, la adaptación y la iniciativa es lo que me define.</p>
-</section>
+
+<body class="bg-yellow-50 flex justify-center py-10">
+
+    <!-- Contenedor tipo hoja de libreta -->
+    <div class="w-full max-w-3xl bg-white shadow-lg border-2 border-dashed  border-gray-300 p-8 space-y-6 relative">
+
+        <!-- Líneas horizontales estilo libreta -->
+        <div
+            class="absolute inset-0 bg-[repeating-linear-gradient(to bottom,#eee, #eee 1px, transparent 1px, transparent 32px)] pointer-events-none">
+        </div>
+
+        <!-- Contenido de la página -->
+        <div class="relative z-10 space-y-4">
+            <h1 class="text-4xl font-bold text-gray-800 flex flex-col gap-1 m-0">
+                <span class="flex items-center gap-3">
+                    ¡Hola!
+                    <button class="text-4xl">👋</button>
+                </span>
+
+                <span class="flex items-center gap-3">
+                    Soy Ayman Bourhim.
+                    <img src="./resource/svg/arrow/6ceecafe-3358-4706-8090-83ec634657d8.svg" class="size-20">
+                    <img src="./resource/img/ayman_casual_2_edit.jpg" class="w-24 rotate-12 rounded-lg">
+                </span>
+            </h1>
+
+
+            <p class="text-gray-700">Soy un desarrollador apasionado por crear páginas web limpias y funcionales.</p>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Contáctame ✉️</button>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Descargar CV ⬇️</button>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Linkedin
+            <img src="./resource/img/icons8-linkedin-40.png" alt="linkedin" class="w-4 inline-block ml-1">                 
+            </button>
+            <h2 class="text-2xl font-semibold text-gray-800 mt-6">Experiencia</h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                <li>Montado, mantenimiento y resolución de problemas de ordenadores</li>
+                <li>Practicas como Programador Web</li>
+            </ul>
+
+            <h2 class="text-2xl font-semibold text-gray-800 mt-6">Educación</h2>
+            <ul class="list-disc list-inside text-gray-700 space-y-1">
+                <li>Bachillerato Tecnológico</li>
+                <li>Grado Superior en Desarrollo de Aplicaciones Web</li>
+            </ul>
+
+            <h2 class="text-2xl font-semibold text-gray-800 mt-6">Tecnologías</h2>
+            <p class="text-gray-700">HTML, CSS, JavaScript, React, Node.js, TailwindCSS</p>
+        </div>
+    </div>
 
 </body>
+
 </html>
